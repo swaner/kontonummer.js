@@ -6,7 +6,7 @@ import { BankAccount } from "./bankAccount";
  */
 
 export class AccountNumberValidator {
-    public static validate(number: string) : BankAccount {
+    public static validate(number: string) : BankAccount | null {
         var n = number.replace(/\D/g, ''), i, bank;
         
         for (i in banks)
@@ -21,7 +21,7 @@ export class AccountNumberValidator {
         return null;
     }
 
-    private static validateBank(accnum: string, bank: any) : BankAccount  {
+    private static validateBank(accnum: string, bank: any) : BankAccount | null {
         let clearing = accnum.substr(0,accnum.charAt(0) === "8" ? 5 : 4);
         
         let number =
@@ -57,7 +57,7 @@ export class AccountNumberValidator {
             val = parseInt(number.charAt(--len), 10);
             sum += (bit ^= 1) ? arr[val] : val;
         }
-        return sum && sum % 10 === 0;
+        return <boolean>(sum && sum % 10 === 0);
     };
 
     private static mod11(number: string): boolean
@@ -69,7 +69,7 @@ export class AccountNumberValidator {
             val = parseInt(number.charAt(--len), 10);
             sum += arr[len] * val;
         }
-        return sum && sum % 11 === 0;
+        return <boolean>(sum && sum % 11 === 0);
     }
 
 }

@@ -16,8 +16,10 @@ describe('validator suite', () => {
         const result = AccountNumberValidator.validate(accountNumber);
 
         let expect = expectations[i];
-        chai.assert.strictEqual(expect.clearing_number, result.clearing_number);
-        chai.assert.strictEqual(expect.account_number, result.account_number);
+        if (result != null) {
+          chai.assert.strictEqual(expect.clearing_number, result.clearing_number);
+          chai.assert.strictEqual(expect.account_number, result.account_number);
+        }
       });
     });
   });
