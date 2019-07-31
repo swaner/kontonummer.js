@@ -1,6 +1,6 @@
 {
   "name": "kontonummer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Kontonummer.js is a library to validate swedish account numbers for swedish banks",
   "main": "accountNumberValidator.ts",
   "scripts": {
