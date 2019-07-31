@@ -1,0 +1,31 @@
+{
+  "name": "kontonummer",
+  "version": "1.0.0",
+  "description": "Kontonummer.js is a library to validate swedish account numbers for swedish banks",
+  "main": "accountNumberValidator.ts",
+  "scripts": {
+    "test": "mocha -r ts-node/register tests/**/*.test.ts",
+    "testWithCoverage": "nyc -r lcov -e .ts -x \"*.test.ts\" mocha -r ts-node/register tests/**/*.test.ts && nyc report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jop-io/kontonummer.js.git"
+  },
+  "author": "Johan Svanborg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jop-io/kontonummer.js/issues"
+  },
+  "homepage": "https://github.com/jop-io/kontonummer.js#readme",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.6.8",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "nyc": "^14.1.1",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {}
+}

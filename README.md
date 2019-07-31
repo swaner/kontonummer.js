@@ -65,6 +65,12 @@ console.log(result); // false
 2. I sällsynta fall förekommer kontonummer som inte alls kan kontrolleras genom vägning av kontrollsiffror. Dessa är i regel väldigt gamla kontonummer och få till antalet.
 
 # Uppdateringar
+* **201907-31**
+  * Converted the project to typescript
+  * Added npm 
+  * Renamed kontonummer.js to accountNumberValidator.ts
+  * Renamed main method to validate
+  * Added basic test according to this readme file
 * **2018-05-01**
   * Adderade MedMera Bank
   * Tog bort Royal Bank of Scotland (ej längre verksamma i Sverige)
