@@ -1,4 +1,4 @@
-import { BankAccount } from "./bankAccount";
+import { BankAccount } from "./deps.ts";
 
 /**
  * Licens: MIT

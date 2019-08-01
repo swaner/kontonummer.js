@@ -1,0 +1,1 @@
+export { BankAccount } from 'https://raw.githubusercontent.com/swaner/kontonummer.js/feature/deno/bankAccount.ts'
